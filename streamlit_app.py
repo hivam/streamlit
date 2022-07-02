@@ -4,7 +4,8 @@ import plotly.express as px
 
 df = pd.DataFrame(px.data.gapminder())
 
-clist = df['country'].unique()country = st.sidebar.selectbox("Select a country:",clist)
+clist = df['country'].unique()
+country = st.sidebar.selectbox("Select a country:",clist)
 
 st.header("GDP per Capita over time")
 
